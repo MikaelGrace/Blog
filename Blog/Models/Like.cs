@@ -2,8 +2,13 @@
 {
     public class Like
     {
-        public int Id { get; set; }
+        public int ID { get; set; }
         public int UserID { get; set; }
         public int PostID { get; set; }
+
+        public static string GetTableName()
+        {
+            return "like";
+        }
     }
 }
